@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-#Prints best school using for loop
-
-word="Best School"
+# Prints best school using for loop
 
 for (( i=1; i<=10; i++ ))
 do
-	echo "$word"
+	echo "Best School"
 done
