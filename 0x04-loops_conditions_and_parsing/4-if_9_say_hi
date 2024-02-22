@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Using while to print best school and hi
+
+c=1
+
+while [ $c -lt 11 ]
+do
+	if [ $c == 10 ]
+	then
+		echo "Hi"
+	fi
+
+	echo "Best School"
+	c=$(( c + 1 ))
+done
