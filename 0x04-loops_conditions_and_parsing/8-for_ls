@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bash script thay dusplayscontent of the current directory
+
+files="$(ls)"
+
+for file in $files;
+do
+	echo "$file" | cut -f 2- -d '-'
+done
