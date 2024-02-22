@@ -3,7 +3,7 @@
 
 c=1
 
-while [ $c -lt 10 ]
+while [ $c -le 10 ]
 do
 	if [ $c == 4 ]
 	then
