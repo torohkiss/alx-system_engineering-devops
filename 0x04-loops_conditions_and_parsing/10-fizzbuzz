@@ -1,20 +1,21 @@
 #!/usr/bin/env bash
 # Fizzbyzz but in shrll script
 
+n=1
 
-for i in {1..100}
+while [ $n -le 100 ]
 do
-	if [ $((i % 5)) -eq 0 -a $((i % 3)) -eq 0 ]
+	if [ $((n % 3)) -eq 0 -a $((n % 5)) -eq 0 ]
 	then
 		echo "FizzBuzz"
-	elif [ $((i % 5)) -eq 0 ]
+	elif [ $((n % 5)) -eq 0 ]
 	then
 		echo "Buzz"
-	elif [ $((i % 3)) -eq 0 ]
+	elif [ $((n % 3)) -eq 0 ]
 	then
 		echo "Fizz"
 	else
-	then
-		echo "$i"
+		echo "$n"
 	fi
+	n=$((n+1))
 done
