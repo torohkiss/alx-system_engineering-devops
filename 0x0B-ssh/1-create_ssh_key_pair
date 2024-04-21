@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# generste an rsa key pair with school as name
+ssh-keygen -t rsa -f school
