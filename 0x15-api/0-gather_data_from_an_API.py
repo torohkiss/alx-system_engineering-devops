@@ -32,4 +32,4 @@ if __name__ == "__main__":
 
     comp_task_titles = [task['title'] for task in data_comp_true]
     for title in comp_task_titles:
-        print('\t{}'.format(title))
+        print('\t {}'.format(title))
