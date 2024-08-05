@@ -27,8 +27,8 @@ if __name__ == "__main__":
     data_comp_true = data_comp.json()
     num_comp_tasks = len(data_comp_true)
 
-    print("Employee {} is done with tasks({}/{}):".format(user_name,
-         num_comp_tasks, total_num_tasks))
+    print("Employee {} is done with tasks({}/{}):".format(
+        user_name, num_comp_tasks, total_num_tasks))
 
     comp_task_titles = [task['title'] for task in data_comp_true]
     for title in comp_task_titles:
