@@ -39,7 +39,7 @@ if __name__ == "__main__":
             } for task in data
         ]
     }
-    
+
     json_data = json.dumps(user_tasks)
 
     with open("USER_ID.json", 'w') as file:
