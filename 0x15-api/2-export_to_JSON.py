@@ -28,8 +28,6 @@ if __name__ == "__main__":
     data_comp_true = data_comp.json()
     num_comp_tasks = len(data_comp_true)
 
-    user_name = "Antonette"
-
     user_tasks = {
         user_id: [
             {
@@ -40,7 +38,7 @@ if __name__ == "__main__":
         ]
     }
 
-    json_data = json.dumps(user_tasks)
+    file_name = user_id + ".json"
 
-    with open("USER_ID.json", 'w') as file:
-        file.write(json_data)
+    with open(file_name, 'w') as file:
+        json.dump(user_tasks, file)
