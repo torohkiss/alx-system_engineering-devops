@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# script tha displays its own PID
+# A Bash script that displays its own PID.
 
-echo "$$"
+pidof bash
